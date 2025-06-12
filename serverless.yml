@@ -1,4 +1,4 @@
-org: geraldocolchado
+org: tamyflores
 service: api-alumnos
 
 provider:
@@ -6,7 +6,7 @@ provider:
   runtime: python3.12
   timeout: 30  
   iam:
-    role: arn:aws:iam::498917627164:role/LabRole
+    role: arn:aws:iam::175550666360:role/LabRole
 
 functions:
   listar:
@@ -17,6 +17,7 @@ functions:
           method: post
           cors: true
           integration: lambda
+
 
 
 
